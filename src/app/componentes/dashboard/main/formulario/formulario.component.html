@@ -1,0 +1,33 @@
+<form [formGroup]="formularioAlumnos" (ngSubmit)="agregarAlumno()" class="w-2/5 form__center">
+    <div class="form-group mt-4">
+        <label for="nombre">Nombre*</label>
+        <input type="text" class="form-control border-2 h-14" formControlName="nombre" placeholder="Nombre">
+        <span id="errorMessage" class="text-red-400 text-base mx-2" *ngIf="formularioAlumnos.get('nombre')!.invalid&&formularioAlumnos.get('nombre')!.touched">El nombre de contacto debe ser de al menos 2 letras</span>
+    </div>
+    <div class="form-group mt-4">
+        <label for="nombre">Apellido*</label>
+        <input type="text" class="form-control border-2 h-14" formControlName="apellido" placeholder="Apellido">
+        <span id="errorMessage" class="text-red-400 text-base mx-2" *ngIf="formularioAlumnos.get('apellido')!.invalid&&formularioAlumnos.get('apellido')!.touched">El apellido de contacto debe ser de al menos 3 letras</span>
+    </div>
+    <div class="form-group mt-4">
+        <label for="email">Email*</label>
+        <input type="text" class="form-control border-2 h-14" formControlName="email" placeholder="Email">
+        <span id="errorMessage" class="text-red-400 text-base mx-2" *ngIf="formularioAlumnos.get('email')!.invalid&&formularioAlumnos.get('email')!.touched">Dirección de email no válida</span>
+
+    </div>
+    <div class="form-group mt-4">
+        <label for="nombre">Clase*</label>
+        <input type="text" class="form-control border-2 h-14" formControlName="clase" placeholder="Clase">
+        <span id="errorMessage" class="text-red-400 text-base mx-2" *ngIf="formularioAlumnos.get('clase')!.invalid&&formularioAlumnos.get('clase')!.touched">Las clases contienen de 6 caracteres</span>
+    </div>
+    <div class="form-group mt-4">
+        <label for="nombre">Curso*</label>
+        <input type="text" class="form-control border-2 h-14" formControlName="curso" placeholder="Curso">
+        <span id="errorMessage" class="text-red-400 text-base mx-2" *ngIf="formularioAlumnos.get('curso')!.invalid&&formularioAlumnos.get('curso')!.touched">Debe ser un curso válido</span>
+    </div>
+    <div class="example-button-row mt-9">
+        <button type="submit" mat-raised-button  [disabled]="formularioAlumnos.invalid">Agregar</button>  
+        <button type="button" mat-raised-button class="btnAngular__tabla" routerLink="/dashboard/table">Tabla</button>  
+    </div>
+    
+</form>

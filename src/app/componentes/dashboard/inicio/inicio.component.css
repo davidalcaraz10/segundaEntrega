@@ -1,0 +1,24 @@
+.carrusel__tam {
+    height: 20vh;
+}
+
+.img__tam {
+    height: 75vh;
+}
+
+.carousel-caption {
+    height: 13rem;
+}
+
+.linea__boton {
+    height: 5px;
+}
+
+.h2__tam {
+    font-size: 5.5rem;
+    margin-bottom: 3rem;
+}
+
+.p__tam {
+    font-size: 2rem;
+}

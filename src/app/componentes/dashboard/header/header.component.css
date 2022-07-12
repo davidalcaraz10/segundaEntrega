@@ -1,0 +1,12 @@
+.titulo__fuente {
+    height: 6rem;
+    font-size: 190%;
+}
+
+.titulo__margin {
+    margin-left: 1.5rem;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }

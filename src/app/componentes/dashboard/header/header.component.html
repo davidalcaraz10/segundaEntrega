@@ -1,0 +1,31 @@
+<header>
+    <p>
+        <mat-toolbar color="primary" class="titulo__fuente">
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                    <mat-icon>dialpad</mat-icon>
+                        <button routerLink="/dashboard/table">Tabla</button>
+                </button>
+                <button mat-menu-item>
+                    <mat-icon>voicemail</mat-icon>
+                        <button routerLink="/dashboard/formulario">Agregar</button>
+                </button>
+            </mat-menu>
+            
+            <span class="titulo__margin">Lista de Alumnos</span>
+
+            <span class="example-spacer"></span>
+            <button mat-button class="text-3xl" routerLink="/dashboard/inicio">Inicio</button>
+            <button mat-button class="text-3xl" routerLink="/dashboard/table">Tabla</button>
+            <button mat-button class="text-3xl" routerLink="/dashboard/formulario">Agregar Alumnos</button>
+            <span class="example-spacer"></span>
+
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" routerLink="login">
+                <mat-icon class="">logout</mat-icon>
+              </button>
+        </mat-toolbar>  
+    </p>
+</header> 

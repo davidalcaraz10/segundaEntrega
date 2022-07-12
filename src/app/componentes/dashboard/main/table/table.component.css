@@ -1,0 +1,19 @@
+th {
+    width: 18%;
+}
+
+.edit__color {
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+.delete__color {
+    color: rgba(225, 0, 0, 0.694);
+    cursor: pointer;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 83%;
+    margin-left: 8%;
+  }

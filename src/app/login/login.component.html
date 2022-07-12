@@ -1,0 +1,20 @@
+<div class="flex justify-center items-center h-full">
+    <div class="w-full max-w-xs text-center">
+        <mat-spinner *ngIf="carga" class="spinner" diameter="50"></mat-spinner>
+
+        <form *ngIf="!carga" [formGroup]="form" (ngSubmit)="ingresar()">
+            <img src="./assets/img/acceso.png" class="w-1/2 ml-20">
+            <h3>Inicia Sesión</h3>
+            <mat-form-field appearance="fill">
+                <mat-label>Usuario</mat-label>
+                <input matInput autocomplete="off" formControlName="usuario">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Contraseña</mat-label>
+                <input type="password" matInput autocomplete="off" formControlName="password">
+            </mat-form-field>
+            <button type="submit" mat-raised-button color="primary" class="w-full h-16" [disabled]="form.invalid">Ingresar</button>
+        </form>
+    </div>
+</div>
+
